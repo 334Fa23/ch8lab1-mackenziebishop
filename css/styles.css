@@ -129,7 +129,7 @@ figcaption {
     font-weight: bold;
 }
 
-#contact {
+#contact, #rental h2 {
     text-align: center;
 }
 
@@ -161,6 +161,34 @@ figcaption {
     height: 50%;
 }
 
+table {
+    border: 1px solid #373684;
+    border-collapse: collapse;
+    margin: 0 auto;
+    width: 100%;
+}
+
+caption {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 1%;
+}
+
+th, td {
+    border: 1px solid #373684;
+    padding: 2%;
+}
+
+th {
+    background-color: #373684;
+    color: #fff;
+    font-size: 1.15em;
+}
+
+tr:nth-child(odd){
+    background-color: #b7b7e1;
+}
+
 /* Style rules for footer content */
 footer {
     text-align: center;
@@ -171,6 +199,29 @@ footer {
 footer a {
     color: #4645a8;
     text-decoration: none;
+}
+
+/* Style rules for form elements */
+fieldset, input {
+    margin-bottom: 2%;
+}
+
+fieldset legend {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+label {
+    display: block;
+    padding-top: 3%;
+}
+
+form #submit{
+    margin: 0 auto;
+    display: block;
+    padding: 3%;
+    background-color: #b7b7e1;
+    font-size: 1em;
 }
 
 /* Media Query for Tablet Viewport */
@@ -221,6 +272,12 @@ footer a {
         width: 500px;
         height: 450px;
     }
+
+    /* Tablet Viewport: Style rule for form element */
+    form {
+        width: 70%;
+        margin: 0 auto;
+    }
     
 }
 
@@ -268,7 +325,18 @@ footer a {
     aside {
         grid-column: 1 / span 4;
     }
-    
+
+    /* Desktop Viewport: Style rules for table */
+    table {
+        width: 70%;
+    }
+
+    /* Desktop Viewport: Style rules for form elements */
+    .form-grid {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 20px;
+    }
 }
 
 /* Media Query for Print */
