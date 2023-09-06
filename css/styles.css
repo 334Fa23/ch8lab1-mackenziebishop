@@ -83,10 +83,6 @@ main p {
     font-weight: bold;
 }
 
-#piano, #guitar, #violin {
-    margin: 0 2%;
-}
-
 #info {
     clear: left;
     background-color: #c0caf7;
@@ -306,12 +302,6 @@ form #submit{
     
     main h3 {
         font-size: 1.5em;
-    }
-    
-    #piano, #guitar, #violin {
-        width: 29%;
-        float: left;
-        margin: 0 2%;
     }
     
     .grid {
